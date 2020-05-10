@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background: #3939f3;
+  color: #fff;
+  padding: 0.8em 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.input-section h2 {
+  padding: 0.8em 0 0.5em 0;
+}
+
+.input-section p {
+  font-size: 1rem;
+  /* padding-bottom: 0.4rem; */
+}
+
+.input-section input {
+  width: 80%;
+  padding: 0.5em 0.3em;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  margin-left: 1.2em;
+  width: 15%;
+  padding: 0.4em 0;
+  font-size: 1.1rem;
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.content ul {
+  list-style: none;
+  margin: 0.5em 1.5em 0 1em;
+}
+
+.container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0.3em 0.3em 0.3em;
+  border-bottom: 1px solid #ccc;
+  /* margin: 0 0.5em; */
+}
+
+.left {
+  display: flex;
+  width: 80%;
+}
+
+.check_task {
+  display: inline-block;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  width: 100%;
+}
+
+.left i {
+  font-size: 1.3rem;
+  padding-right: 0.2em;
+}
+.left .fa-check-circle {
+  color: #5cb85c;
+}
+.left .fa-check-circle-o {
+  color: #333;
+}
+
+.left .text {
+  font-size: 1.2rem;
+  display: inline-block;
+  /* margin-bottom: 1.3em !important; */
+}
+.left .text[contenteditable="true"],
+.left .text:focus {
+  border: 1px solid #2196f3;
+  box-shadow: 0 0 4px #2196f3;
+  width: 70%;
+  padding: 0.2em 0.6em 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.left .check {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.right {
+  margin-right: 0.5em;
+}
+
+.right i {
+  padding: 0.42em 0.5em;
+  color: #fff;
+  border-radius: 2px;
+}
+.right .fa-pencil {
+  background-color: #2196f3;
+}
+.right .fa-trash-o {
+  background-color: #d9534f;
+}
+
+.right .fa-check {
+  background-color: #5cb85c !important;
+  display: none;
+  /* visibility: hidden; */
+}
+
+@media (max-width: 690px) {
+  .container {
+    width: 95%;
+  }
+  .content ul {
+    margin: 0.2em;
+  }
+
+  .right {
+    margin-right: 0;
+  }
+}
